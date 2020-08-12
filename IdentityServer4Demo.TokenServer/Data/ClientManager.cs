@@ -10,7 +10,8 @@ namespace IdentityServer4Demo.TokenServer.Data
             {
                     new Client
                     {
-                        // Client = frontend app.   GTM example: Employee Profile
+                        // Fuji's notes
+                        // Client = app.   GTM example: Employee Profile Angular SPA
                          ClientName = "Client Application1",
                          ClientId = "t8agr5xKt4$3",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,
@@ -19,7 +20,8 @@ namespace IdentityServer4Demo.TokenServer.Data
                     },
                     new Client
                     {
-                        // Another frontend app.  GTM example: Release Notes
+                        // Fuji's notes
+                        // Another app.  GTM example: DS Transfer Form Angular SPA
                          ClientName = "Client Application2",
                          ClientId = "3X=nNv?Sgu$S",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,
