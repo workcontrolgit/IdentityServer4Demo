@@ -9,8 +9,8 @@ namespace IdentityServer4Demo.TokenServer.Data
             new List<ApiResource>
             {
 
-                // ApiResource = backend WebAPI.   Example: can be Employee Profile
-
+                // Fuji's comments
+                // ApiResource = backend WebAPI.   Example: Employee Profile WebAPI backend
                 new ApiResource {
                     Name = "app.api.whatever",
                     DisplayName = "Whatever Apis",
@@ -21,6 +21,8 @@ namespace IdentityServer4Demo.TokenServer.Data
                         new Scope("app.api.whatever.full")
                     }
                 },
+                // Fuji's comments
+                // Another ApiResource = backend WebAPI.   Example: DS Transfer Form WebAPI backend
                 new ApiResource("app.api.weather","Weather Apis")
             };
     }

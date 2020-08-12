@@ -10,16 +10,22 @@ namespace IdentityServer4Demo.TokenServer.Data
             {
                     new Client
                     {
-                        // Client = frontend app.   GTM example: Employee Profile
+                        // Fuji's comments
+                        // Client = app.   GTM example: Employee Profile Angular SPA
                          ClientName = "Client Application1",
+                        // Fuji's comments
+                        // ClientId is like AppId in Azure > App Registraion 
                          ClientId = "t8agr5xKt4$3",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,
+                        // Fuji's comments
+                        // ClientSecrets is like Azure Service Principle
                          ClientSecrets = { new Secret("eb300de4-add9-42f4-a3ac-abd3c60f1919".Sha256()) },
                          AllowedScopes = new List<string> { "app.api.whatever.read", "app.api.whatever.write" }
                     },
                     new Client
                     {
-                        // Another frontend app.  GTM example: Release Notes
+                        // Fuji's comments
+                        // Another app.  GTM example: DS Transfer Form Angular SPA
                          ClientName = "Client Application2",
                          ClientId = "3X=nNv?Sgu$S",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,

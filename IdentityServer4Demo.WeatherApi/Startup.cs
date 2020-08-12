@@ -20,6 +20,11 @@ namespace IdentityServer4Demo.WeatherApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
+                    // Fuji's comments
+                    // Code to validate JWT token.  
+                    // The Authority is the Token Serive server URL
+                    // The ApiName is defined in the ResourceManager
+
                     .AddIdentityServerAuthentication(options =>
                     {
                         options.Authority = "https://localhost:44354";
