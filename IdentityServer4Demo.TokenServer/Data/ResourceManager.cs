@@ -8,6 +8,9 @@ namespace IdentityServer4Demo.TokenServer.Data
         public static IEnumerable<ApiResource> Apis =>
             new List<ApiResource>
             {
+
+                // ApiResource = backend WebAPI.   Example: can be Employee Profile
+
                 new ApiResource {
                     Name = "app.api.whatever",
                     DisplayName = "Whatever Apis",

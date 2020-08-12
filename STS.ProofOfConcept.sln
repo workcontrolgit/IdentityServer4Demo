@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer4Demo.TokenServer", "IdentityServer4Demo.TokenServer\IdentityServer4Demo.TokenServer.csproj", "{E00A3222-B8E3-40B6-8612-F1BED7F92D6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureTokenService", "IdentityServer4Demo.TokenServer\SecureTokenService.csproj", "{E00A3222-B8E3-40B6-8612-F1BED7F92D6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer4Demo.WeatherApi", "IdentityServer4Demo.WeatherApi\IdentityServer4Demo.WeatherApi.csproj", "{DFD70CD2-956F-4E6B-85D2-FBF2870D341D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiResources.WeatherApi", "IdentityServer4Demo.WeatherApi\ApiResources.WeatherApi.csproj", "{DFD70CD2-956F-4E6B-85D2-FBF2870D341D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

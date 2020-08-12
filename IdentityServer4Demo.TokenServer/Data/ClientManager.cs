@@ -10,6 +10,7 @@ namespace IdentityServer4Demo.TokenServer.Data
             {
                     new Client
                     {
+                        // Client = frontend app.   GTM example: Employee Profile
                          ClientName = "Client Application1",
                          ClientId = "t8agr5xKt4$3",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,
@@ -18,6 +19,7 @@ namespace IdentityServer4Demo.TokenServer.Data
                     },
                     new Client
                     {
+                        // Another frontend app.  GTM example: Release Notes
                          ClientName = "Client Application2",
                          ClientId = "3X=nNv?Sgu$S",
                          AllowedGrantTypes = GrantTypes.ClientCredentials,
