@@ -39,6 +39,7 @@ namespace IdentityServer4Demo.TokenServer.Data
                     ApiSecrets = { new Secret("0a2e472b-f263-43fd-8372-3b13f5acf222".Sha256()) },
                     Scopes = new List<Scope> {
                         new Scope("app.api.employeeprofile.read"),
+                        new Scope("app.api.employeeprofile.write"),
                     }
                 },
             };
