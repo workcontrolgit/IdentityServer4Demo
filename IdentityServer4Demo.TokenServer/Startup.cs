@@ -10,6 +10,10 @@ namespace IdentityServer4Demo.TokenServer
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+
+            // Fuji's comments
+            // For Proof of Concept,  user in memory data storage.  The metadata for Client and ApiResources can be loaded from storage.
+
             services.AddIdentityServer()
                     .AddDeveloperSigningCredential()
                     .AddInMemoryApiResources(Data.ResourceManager.Apis)
