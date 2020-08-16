@@ -10,7 +10,7 @@ namespace IdentityServer4Demo.TokenServer.Data
             {
 
                 // Fuji's comments
-                // ApiResource = backend WebAPI.   Example: Employee Profile WebAPI backend
+                // A place holder ApiResource that can be used for your app
                 new ApiResource {
                     Name = "app.api.whatever",
                     DisplayName = "Whatever Apis",
@@ -22,8 +22,25 @@ namespace IdentityServer4Demo.TokenServer.Data
                     }
                 },
                 // Fuji's comments
-                // Another ApiResource = backend WebAPI.   Example: DS Transfer Form WebAPI backend
-                new ApiResource("app.api.weather","Weather Apis")
+                // Register Weather ApiResource in the solution
+                new ApiResource {
+                    Name = "app.api.weather",
+                    DisplayName = "Weather Apis",
+                    ApiSecrets = { new Secret("a75a559d-1dab-4c65-9bc0-f8e590cb389e".Sha256()) },
+                    Scopes = new List<Scope> {
+                        new Scope("app.api.weather"),
+                    }
+                },
+                // Fuji's comments
+                // Register EmployeeProfile ApiResource generated using the ApiBoilerPlate tempate
+                new ApiResource {
+                    Name = "app.api.employeeprofile",
+                    DisplayName = "EmployeeProfile Apis",
+                    ApiSecrets = { new Secret("0a2e472b-f263-43fd-8372-3b13f5acf222".Sha256()) },
+                    Scopes = new List<Scope> {
+                        new Scope("app.api.employeeprofile.read"),
+                    }
+                },
             };
     }
 }

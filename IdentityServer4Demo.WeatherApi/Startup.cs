@@ -19,6 +19,8 @@ namespace IdentityServer4Demo.WeatherApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var stsServer = Configuration["StsServer"];
+
             services.AddAuthentication(IdentityServerAuthenticationDefaults.AuthenticationScheme)
                     // Fuji's comments
                     // Code to validate JWT token.  
@@ -27,8 +29,9 @@ namespace IdentityServer4Demo.WeatherApi
 
                     .AddIdentityServerAuthentication(options =>
                     {
-                        options.Authority = "https://localhost:44354";
+                        options.Authority = stsServer;
                         options.ApiName = "app.api.weather";
+                        options.ApiSecret = "a75a559d-1dab-4c65-9bc0-f8e590cb388d";
                     });
 
             services.AddControllers();
